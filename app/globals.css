@@ -1,27 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  scroll-behavior: smooth;
+  font-family: 'DM Sans', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.active {
+  color: #25CB9E;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+ 
+
+/* Tailwind Styles */
+.boxWidth {
+  @apply w-full mx-auto md:max-w-3xl lg:max-w-5xl xl:max-w-[1200px];
+}
+
+.paddingX {
+  @apply px-5;
+}
+
+.paddingY {
+  @apply pt-20 xl:pt-36;
+}
+
+.bgCover {
+  @apply absolute inset-0 -z-10 h-full w-full object-cover object-top md:object-center;
+}
+
+.backgroundImgStyles {
+  @apply absolute inset-0 -z-10 h-full w-full object-cover object-left-top;
+}
+
+.heroDiv {
+  @apply bg-primary rounded-ee-[100px] xs:rounded-ee-[150px] xl:rounded-ee-[250px] relative isolate;
+}
+
+.flexCenter {
+  @apply flex justify-center items-center;
+}
+
+.flexStart {
+  @apply flex justify-center items-start;
+}
+
+.sectionTextHeading {
+  @apply uppercase text-heading text-xs sm:text-[14px] font-semibold mb-3 tracking-widest;
+}
+
+.sectionTextHeadingSecondary {
+  @apply font-semibold text-2xl sm:text-3xl xl:text-[32px] mb-3 text-headingSecondary;
 }
