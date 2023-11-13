@@ -17,9 +17,6 @@ module.exports = {
         muted: "#7B8188",
         yellow: "#F6C416",
       },
-      fontFamily: {
-        'DM': ['"DM Sans"', "sans-serif"],
-      },
     },
     screens: {
       xs: "480px",
@@ -29,7 +26,5 @@ module.exports = {
       xl: "1220px",
     },
   },
-  plugins: [
-    require('@tailwindcss/aspect-ratio'),
-  ],
+  plugins: [],
 }

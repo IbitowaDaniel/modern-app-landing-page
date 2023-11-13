@@ -4,7 +4,7 @@ import Image from "next/image";
 
 
 const Footer = () => (
-  <section className="boxWidth paddingX paddingY">
+  <footer className="boxWidth paddingX paddingY">
     <div className="border-t lg:-mt-16 pb-10 lg:pt-8 lg:pb-16 lg:flex lg:flex-row-reverse lg:justify-between lg:max-w-5xl xl:max-w-full lg:mx-auto">
       <div className="grid grid-cols-2 sm:pt-10 md:grid-cols-4 lg:gap-x-6 xl:gap-x-12 xl:mr-12">
         {FooterData.map((item) => (
@@ -43,7 +43,7 @@ const Footer = () => (
         </div>
       </div>
     </div>
-  </section>
+  </footer>
 );
 
 export default Footer

@@ -2,8 +2,11 @@ import "./globals.css";
 import { Header, Hero, Footer } from "./sections";
 import { BannerBg } from "./assets";
 import Image from "next/image";
+import { DM_Sans } from 'next/font/google'
 
-
+const dm_sans = DM_Sans({
+  subsets: ['latin'],
+})
 
 export const metadata = {
   title: 'Modern App Page',
@@ -13,8 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-
+      <body className={dm_sans.className}>
         <div id="home" className="heroDiv">
           <Image
             src={BannerBg}

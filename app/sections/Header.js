@@ -27,7 +27,7 @@ const scrollFunction = () => {
 };
 
 return (
-<section>
+<>
   <NavbarComponent
     headerStyles="bg-transparent"
     Logo={LogoWhite}
@@ -46,7 +46,7 @@ return (
       openMenuBtnColor="text-black"
     />
   </div>
-</section>
+</>
 )
 }
 
