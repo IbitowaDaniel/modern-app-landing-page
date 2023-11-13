@@ -19,7 +19,7 @@ const Hero = () => (
             <button href="#" className="font-medium text-primary bg-white rounded-full px-5 py-3 lg:px-7" aria-label="Get Started">
               Get Started
             </button>
-            <button aria-label="Play Video"><FaPlayCircle className='inline-block text-2xl mr-2' />
+            <button aria-label="Play Video"><FaPlayCircle className='inline-block text-2xl mr-[0.5rem]' />
               Watch Video
             </button>
           </div>
