@@ -74,7 +74,7 @@ const NavbarComponent = ({ headerId, headerStyles, Logo, btnStyles, headerListCo
 
                 {/* Social Links */}
                 <div className='absolute w-[18rem] bottom-0'>
-                  <div className='flex gap-x-4 justify-center items-center mb-[20vh]'>
+                  <div className='flex gap-x-4 justify-center items-center mb-[10vh]'>
                     {SocialLinks.map((item, id) => (
                       <div key={id} className='text-text hover:text-secondary cursor-pointer'>
                         <Link to={item.path}>{item.icon}</Link>
