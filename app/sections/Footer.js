@@ -29,17 +29,19 @@ const Footer = () => (
 
       <div className="lg:ml-8 xl:ml-12">
         <div className="mt-12 flex flex-row items-center justify-center lg:items-start lg:justify-start h-4 lg:h-0 pb-4 xs:pb-8 lg:pb-0">
-          <Image
-            src={LogoDark}
-            alt="logo"
-            className="w-28 xs:w-48 lg:mt-6"
-          />
+          <a href="https://daniel-ibitowa.vercel.app" target="_blank">
+            <Image
+              src={LogoDark}
+              alt="logo"
+              className="w-28 xs:w-48 lg:mt-6"
+            />
+          </a>
         </div>
 
         <div className="text-sm sm:text-base text-center lg:text-left">
           <p className="text-text my-3">Terms of use | Privacy </p>
-          <p className="text-text my-3"> Copyright {new Date().getFullYear()} <span className="font-bold text-base text-headingSecondary hover:text-secondary">Daniel Ibitowa</span></p>
-
+          <p className="text-text my-3"> Copyright {new Date().getFullYear()} <span className="font-bold text-base text-headingSecondary hover:text-secondary">
+            <a href="https://daniel-ibitowa.vercel.app" target="_blank"> Daniel Ibitowa</a></span></p>
         </div>
       </div>
     </div>

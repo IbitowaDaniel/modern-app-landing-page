@@ -96,10 +96,10 @@ const NavbarComponent = ({ headerId, headerStyles, Logo, btnStyles, headerListCo
           <div className="flex h-16 py-9 items-center">
             {/* Logo */}
             <div className='ml-0 flex'>
-            <Link to="/">
+            <a href="https://daniel-ibitowa.vercel.app" target="_blank">
               <span className="sr-only">Logo</span>
               <Image src={Logo} alt='Page logo' className='w-28 xs:w-36 md:w-40' />
-            </Link>
+             </a>
             </div>
 
 
